@@ -35,7 +35,11 @@ public class University {
         return sortedList.get(0);
     }
 
-    public void addStudent(Student student) {
+    public void addStudent(Student student) throws Exception {
+        Student studentCheck = this.allStudents.get(student.getId());
+        if (studentCheck != null) {
+            throw new Exception("Student already exist");
+        }
         this.allStudents.put(student.getId(), student);
     }
 

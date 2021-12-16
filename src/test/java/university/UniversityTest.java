@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class UniversityTest {
 
     @Test
-    void getAllStudents() {
+    void getAllStudents() throws Exception {
         University university = new University();
         ItStudent student = new ItStudent(1, "Sebastian", 40, 1, 4, true);
         university.addStudent(student);
@@ -16,7 +16,7 @@ class UniversityTest {
     }
 
     @Test
-    void getAllStudentsRepresentative() {
+    void getAllStudentsRepresentative() throws Exception {
         University university = new University();
         ItStudent student = new ItStudent(1, "Sebastian", 40, 1, 4, true);
         university.addStudent(student);
@@ -30,7 +30,7 @@ class UniversityTest {
     }
 
     @Test
-    void getStudentCount() {
+    void getStudentCount() throws Exception {
         University university = new University();
         ItStudent student = new ItStudent(1, "Sebastian", 40, 1, 4, true);
         university.addStudent(student);
@@ -38,7 +38,7 @@ class UniversityTest {
     }
 
     @Test
-    void removeStudent() {
+    void removeStudent() throws Exception {
         University university = new University();
         ItStudent student = new ItStudent(1, "Sebastian", 40, 1, 4, true);
         university.addStudent(student);
@@ -48,7 +48,7 @@ class UniversityTest {
     }
 
     @Test
-    void getBestStudent() {
+    void getBestStudent() throws Exception {
         University university = new University();
         ItStudent student = new ItStudent(1, "Sebastian", 40, 1, 4, true);
         university.addStudent(student);
@@ -60,7 +60,7 @@ class UniversityTest {
     }
 
     @Test
-    void addStudent() {
+    void addStudent() throws Exception {
         University university = new University();
         ItStudent student = new ItStudent(1, "Sebastian", 40, 1, 4, true);
         university.addStudent(student);
@@ -68,7 +68,7 @@ class UniversityTest {
     }
 
     @Test
-    void getAverageGrade() {
+    void getAverageGrade() throws Exception {
         University university = new University();
         System.out.println("This ist the University :" + university.getNameOfUniversity());
         ItStudent student = new ItStudent(1, "Sebastian", 40, 1, 4, true);
@@ -81,7 +81,7 @@ class UniversityTest {
     }
 
     @Test
-    void setStudentRepresentativeById() {
+    void setStudentRepresentativeById() throws Exception {
         University university = new University();
         ItStudent student = new ItStudent(1, "Sebastian", 40, 1, 4, false);
         university.addStudent(student);
